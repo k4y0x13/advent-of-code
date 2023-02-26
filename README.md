@@ -3,6 +3,12 @@ To improve my coding skills I am attempting [Advent of Code](https://adventofcod
 
 This repository contains my solutions to the problems. 
 
+# Reminder:
+*2022 Day 4*
+My algorithm didn't gave the right answer.
+Need to relook and understand what went wrong and fix it.
+*Solution:*
+- I was so stupid that I was comparing STRINGS!!!! instead of INTS!!!!
 # Progress:
 I will be starting from 2022 and working backwards.
 - [ ] 2022: In progress
@@ -17,7 +23,7 @@ I will be starting from 2022 and working backwards.
 # 2022
 - [x] Day 1
 - [x] Day 2
-- [ ] Day 3
+- [x] Day 3
 - [ ] Day 4
 - [ ] Day 5
 - [ ] Day 6
