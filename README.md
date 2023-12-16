@@ -1,49 +1,19 @@
 # About
 To improve my coding skills I am attempting [Advent of Code](https://adventofcode.com/). 
+Currently there's python and golang solutions that I did.
 
 This repository contains my solutions to the problems. 
 
-# Reminder:
-*2022 Day 4*
-My algorithm didn't gave the right answer.
-Need to relook and understand what went wrong and fix it.
-*Solution:*
-- I was so stupid that I was comparing STRINGS!!!! instead of INTS!!!!
 # Progress:
 I will be starting from 2022 and working backwards.
+- [ ] 2023: In progress
 - [ ] 2022: In progress
 - [ ] 2021
-- [ ] 2020
-- [ ] 2019
-- [ ] 2018
-- [ ] 2017
-- [ ] 2016
-- [ ] 2015
+
+# 2023
+- [ ] Day 1
 
 # 2022
 - [x] Day 1
 - [x] Day 2
 - [x] Day 3
-- [ ] Day 4
-- [ ] Day 5
-- [ ] Day 6
-- [ ] Day 7
-- [ ] Day 8
-- [ ] Day 9
-- [ ] Day 10
-- [ ] Day 11
-- [ ] Day 12
-- [ ] Day 13
-- [ ] Day 14
-- [ ] Day 15
-- [ ] Day 16
-- [ ] Day 17
-- [ ] Day 18
-- [ ] Day 19
-- [ ] Day 20
-- [ ] Day 21
-- [ ] Day 22
-- [ ] Day 23
-- [ ] Day 24
-
-# 2021
