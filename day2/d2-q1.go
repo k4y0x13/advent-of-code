@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -23,6 +24,7 @@ func main() {
 	reader := bufio.NewReader(file)
 
 	global_total_area := 0
+	global_total_perimeter := 0
 	for {
 
 		string_slice_with_new_line, err := reader.ReadString('\n') // Delim String in parameters
@@ -60,14 +62,14 @@ func main() {
 		// NOTE: Step 3: Calculate slack
 		// It can only be three possibilities (only one can be max)
 		slack := 0
-		if length > height && length > width {
-			slack = height * width
-		} else if width > height && width > length {
-			slack = length * height
-		} else if height > length && height > width {
-			slack = length * width
-		}
+		n := []int{length, width, height}
+		sort.Ints(n)
+		slack = n[0] * n[1]
 		fmt.Println("slack:", slack)
+
+		perimeter := 2*n[0] + 2*n[1]
+		total_feet := length * width * height
+		global_total_perimeter += perimeter + total_feet
 
 		total_surface_area := slack + surface_area
 		fmt.Println("total surface area:", total_surface_area)
@@ -77,5 +79,6 @@ func main() {
 	}
 
 	fmt.Println("Total Area overall:", global_total_area)
+	fmt.Println("Total Ribbon Required:", global_total_perimeter)
 
 }
