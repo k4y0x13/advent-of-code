@@ -69,7 +69,7 @@ func part1(input string) int {
 	}
 
 	// fmt.Println("")
-	// fmt.Println("final zero value", zero_counter)
+	fmt.Println("final zero value part1: ", zero_counter)
 	return zero_counter
 }
 
@@ -102,35 +102,37 @@ func part2(input string) int {
 		// 4. sub and add to the final answer modulus 100 (absolute sum)
 		// fmt.Printf("current number: %v\n", current_number)
 		// fmt.Printf("zero counter: %v\n", zero_counter)
-		if lr_char == "R" {
-			// add
-			// fmt.Printf("adding %v\n", number_change)
-			current_number += number_change
-			current_number = current_number % 100
+		for i := 0; i < number_change; i++ {
+			if lr_char == "R" {
+				// add
+				//fmt.Printf("adding %v\n", number_change)
+				current_number += 1
+				current_number = current_number % 100
 
-			if current_number == 0 {
-				zero_counter += 1
-				// fmt.Printf("zero added")
-			}
+				if current_number == 0 {
+					zero_counter += 1
+					// fmt.Printf("zero added")
+				}
 
-		} else if lr_char == "L" {
-			// sub
-			// fmt.Printf("subbing %v\n", number_change)
-			current_number -= int(math.Abs(float64(number_change)))
-			current_number = current_number % 100
+			} else if lr_char == "L" {
+				// sub
+				//fmt.Printf("subbing %v\n", number_change)
+				current_number -= 1
+				//current_number = int(math.Abs(float64(current_number)))
+				current_number = current_number % 100
 
-			if current_number == 0 {
-				zero_counter += 1
-				// fmt.Printf("zero added")
+				if current_number == 0 {
+					zero_counter += 1
+					// fmt.Printf("zero added")
+				}
 			}
 		}
 		// fmt.Println("")
 	}
 
 	// fmt.Println("")
-	// fmt.Println("final zero value", zero_counter)
+	fmt.Println("final zero value part2: ", zero_counter)
 	return zero_counter
-	return 6
 }
 
 func readInput(filename string) (string, error) {
